@@ -6,7 +6,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.integrate import odeint
 
-'''
+
 # Problem 1
 
 # RHS
@@ -15,7 +15,7 @@ def f1(x, t):
 
 # Analytical Solution
 def g1(x):
-    return
+    return (53/29) * np.exp(-5*t) + (5 * np.cos(2*t) + 2 * np.sin(2*t)) / 29
 
 # Initial Conditions
 t0 = 0.0
@@ -31,7 +31,6 @@ sol = odeint(f1, x0, t)
 # Plot
 plt.figure(figsize=(6,3))
 plt.ylim(-2, 5)
-plt.plot(t, sol[:,0], 'x', label='ODE solver', linewidth =2)
 plt.plot(t, g1(t), 'k-', label='Exact solution', linewidth =2)
 plt.legend( loc='best', scatterpoints=1,  fontsize=15, frameon=False, labelspacing=0.5)
 plt.ylabel("x", size=15)
@@ -39,7 +38,7 @@ plt.xlabel('Time', size=15)
 plt.xticks(fontsize=12)
 plt.yticks(fontsize=12)
 plt.show()
-'''
+
 
 # Problem 2
 
