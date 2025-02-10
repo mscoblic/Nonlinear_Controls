@@ -52,7 +52,7 @@ print("-------------")
 
 
 # Example 5
-def f5(X, t):
+def f5(x, t):
     x, y = X
     return [x*x, -y]
 
